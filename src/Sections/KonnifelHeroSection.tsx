@@ -1,18 +1,20 @@
 import React from "react";
 import Header from "./Header";
-import HeroSection from "./HeroSection";
-import LatestActivities from "./LatestActivities";
+import KonnifelMemberShip from "./KonnifelMemberShip";
+import InternshipsSection from "./InternshipsSection";
 import StatisticsSection from "./StatisticsSection";
 import FooterBanner from "./FooterBanner";
+import {konnifelMembershipData} from '../mocks/KonnifelMembershipData'
 
 const KonnifelHeroSection: React.FC = () => {
   return (
-    <main className="flex overflow-hidden flex-col pt-7 pb-40 bg-white max-w-[1480px] mx-auto max-md:flex max-md:pb-24 max-sm:flex">
+    <main className="flex overflow-hidden w-full max-w-[2600px] flex-col bg-white max-md:flex">
       <Header />
-      <HeroSection />
-      <LatestActivities />
-      <StatisticsSection />
-      <FooterBanner />
+      <KonnifelMemberShip
+      membershipInfo={konnifelMembershipData.membershipInfo}
+      internshipUpdates={konnifelMembershipData.internshipUpdates}
+    />
+      <InternshipsSection />
     </main>
   );
 };
