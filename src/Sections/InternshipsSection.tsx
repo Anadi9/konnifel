@@ -163,7 +163,7 @@ function InternshipsSection() {
     <main>
       <section className="flex flex-col mt-20 px-30 mx-auto items-start w-full max-md:max-w-full">
         <div className="flex flex-wrap gap-5 justify-between self-stretch w-full max-md:max-w-full">
-          <div className="flex gap-5 items-start">
+          <div className="flex gap-5 items-center">
             <CustomInputField
               label="Education Level"
               placeholder="Choose your education level"
