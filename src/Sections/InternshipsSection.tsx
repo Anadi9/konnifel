@@ -61,9 +61,7 @@ const InternshipCard: React.FC<InternshipCardProps> = ({
 }) => {
   return (
     <article
-      className={`flex overflow-hidden flex-col items-start py-6 pr-1 pl-3.5 w-full shadow-sm ${
-        isHighlighted ? "bg-white" : "bg-zinc-50"
-      } h-full`}
+      className={`flex overflow-hidden flex-col items-start py-3 pr-1 pl-3.5 w-full shadow-sm bg-white h-full`}
     >
       <h3 className="text-xl leading-7 text-gray-900">{title}</h3>
       <div className="mt-5 text-sm leading-none text-stone-500">
@@ -104,7 +102,7 @@ const InternshipGrid: React.FC = () => {
   return (
     <section className="px-30 mb-20">
       <div className="mt-20 max-md:mt-10 max-md:mr-0.5 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col">
+        <div className="flex max-md:flex-col">
           {firstRowCards.map((internship, index) => (
             <div
               key={internship.id}
@@ -130,7 +128,7 @@ const InternshipGrid: React.FC = () => {
       </div>
 
       <div className="mt-20 max-md:mt-10 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col">
+        <div className="flex max-md:flex-col">
           {secondRowCards.map((internship, index) => (
             <div
               key={internship.id}
